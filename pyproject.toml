@@ -1,11 +1,14 @@
 [project]
 name = "greeting_fastapi"
-version = "0.1.0"
-description = "Default template for PDM package"
+version = "0.1.1"
+description = "Java project >>> FastAPI migrate"
 authors = [
     {name = "Mingk42", email = "xoals123456t@gmail.com"},
 ]
-dependencies = []
+dependencies = [
+    "fastapi>=0.115.2",
+    "uvicorn[standard]>=0.31.1",
+]
 requires-python = ">=3.11"
 readme = "README.md"
 license = {text = "MIT"}
