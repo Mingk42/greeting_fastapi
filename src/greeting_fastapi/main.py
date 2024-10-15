@@ -18,9 +18,4 @@ class Item(BaseModel):
 @app.get("/greeting")
 async def read_items(greeting_name: Annotated[Item, Query()]):
 
-    if "name" in history:
-        history["name"].append(dict(greeting_name)["name"])
-    else:
-        history["name"]=[dict(greeting_name)["name"]]
-
-    return history
+    return greeting_name
